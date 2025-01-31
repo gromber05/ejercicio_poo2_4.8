@@ -7,7 +7,7 @@ class ConjuntoLibros() {
         lista.forEachIndexed { index, elemento ->
             if (elemento == null ) {
                 lista[index] = libro
-                return@forEachIndexed
+                return
             }
         }
     }
@@ -16,7 +16,7 @@ class ConjuntoLibros() {
         lista.forEachIndexed { index, elemento ->
             if (elemento?.autor == campo || elemento?.titulo == campo ) {
                 lista[index] = null
-                return@forEachIndexed
+                return
             }
         }
     }
